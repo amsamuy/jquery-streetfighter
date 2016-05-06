@@ -41,6 +41,7 @@ $(document).on('keydown', function(key) {
       $('.ryu-ready').hide();
       $('.ryu-cool').show();
     }
+    //ryu goes to his looking cool position when "x" key is pressed
 });
 $(document).on('keyup', function(key) {
     if (key.keyCode === 88) {
@@ -48,4 +49,5 @@ $(document).on('keyup', function(key) {
       $('.ryu-ready').hide();
       $('.ryu-cool').hide();
     }
+    //ryu goes to his stand still position when "x" key is released
 });
