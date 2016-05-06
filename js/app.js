@@ -35,3 +35,17 @@ function playHadouken () {
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
 }
+$(document).on('keydown', function(key) {
+    if (key.keyCode === 88) {
+      $('.ryu-still').hide();
+      $('.ryu-ready').hide();
+      $('.ryu-cool').show();
+    }
+});
+$(document).on('keyup', function(key) {
+    if (key.keyCode === 88) {
+      $('.ryu-still').show();
+      $('.ryu-ready').hide();
+      $('.ryu-cool').hide();
+    }
+});
